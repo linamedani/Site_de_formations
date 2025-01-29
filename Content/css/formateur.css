@@ -1,0 +1,8 @@
+@media only screen and (min-width:1014px) {
+    
+.photo  {
+   
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+}}

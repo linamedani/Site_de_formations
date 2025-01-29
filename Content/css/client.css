@@ -1,0 +1,155 @@
+.home {
+    position: relative;
+}
+
+.home_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home_img {
+    width: 100%;
+    height: 40vh; /* 40% de la hauteur de la vue (viewport) */
+    object-fit: cover; /* Ajuste la façon dont l'image est redimensionnée pour couvrir la boîte définie par width et height */
+}
+.home_txt h1 {
+    font-size: 4em; /* Ajustez la taille du texte selon vos préférences */
+    color: #03a4cc; /* Choisissez la couleur que vous souhaitez pour le texte */
+}
+/* la bare de recherche */
+
+.search-container {
+    margin-top: 50px; /* Ajustez la marge en fonction de vos préférences */
+    text-align: center;
+}
+
+.search-container input {
+    padding: 10px;
+}
+/*une transition d'effet de survol sur le bouton se connecter */
+.search-container button {
+    padding: 10px;
+    background-color: #00aeff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease; 
+}
+
+.search-container button:hover {
+    background-color: #02175c; /* Couleur différente lors du survol */
+}
+
+/*liste des formateur */
+
+.gallary{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallary h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary h1 span{
+    margin-left: 15px;
+    color: #12afd6;
+    font-family: mv boli;
+}
+
+.gallary h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #04a3e2;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallary .gallary_image_box{
+    width: 70%;
+    margin: 8px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: 1fr 1fr 1fr ;*/
+    grid-gap: 22px;                    /*espace*/
+}
+
+.gallary .gallary_image_box .gallary_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.gallary .gallary_image_box .gallary_image img{
+    width: 100%;
+    transition: .3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover img{
+    opacity: 0.4;
+}
+
+.gallary .gallary_image_box .gallary_image h3{
+    position: absolute;
+    font-size: 60px;
+    margin-bottom: 130px;
+    color: #03758a;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover h3{
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover p{
+    opacity: 1;
+    
+    
+}
+
+.gallary .gallary_image_box .gallary_image .gallary_btn{
+
+    position: absolute;
+    margin-top: 180px;
+    color: #000000;
+    background: #04a1bd;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+
+
+

@@ -1,0 +1,245 @@
+/* Reset des marges et des rembourrages par défaut pour le corps de la page */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+   
+}
+ul.container{display: flex;}
+
+/* Style du header */
+nav {
+	background-color: #ffffff;
+	padding: 15px 15;
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+    margin-bottom: 0; 
+  }
+
+.container {
+    width: 100%; /* Le conteneur prend la largeur complète de la page */
+    margin: 0 auto; /* Centrer le contenu du conteneur */
+}
+
+
+.logo_perform_vision {
+    height: 70px;
+    width: auto;
+    object-fit: cover;
+  }
+
+ul li a {
+	position: relative;
+	padding: 10px 20px;
+	text-decoration: none;
+    color: rgb(2, 150, 196); 
+    /* couleur de   bouton dans la  barre de header  */
+	font-size: 25px;
+}
+.nav-item {
+    display: inline-block; /* Les éléments de la liste apparaissent en ligne */
+    margin-right: 30px; /* Espacement entre les éléments de la liste */
+}
+
+.nav-link {
+    text-decoration: none; /* Supprimer la soulignement du lien */
+    color: rgb(2, 150, 196); 
+    /* Couleur du texte des liens en blanc */
+}
+
+.btn {
+    
+        padding: 10px 20px; /* ou ajustez selon nos besoins */
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 0;
+        background-color: transparent;
+        color: rgb(2, 150, 196); /* Couleur  des bouton cnx et inscr     */
+        border: 1px solid transparent;
+        transition: border-color 0.3s ease;
+    
+}
+.btn:hover {
+	border-color: #0a0a0a; /* couleur de   cadre de  bouton 
+	cnx et inscrie  dans la  barre de header  */
+}
+
+
+
+          
+/* Style pour le bouton hamburger */
+.hamburger {
+    display: none;
+    color: rgb(2, 150, 196); /* Couleur  des bouton cnx et inscr     */
+
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media Query pour petits écrans */
+@media screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .logo_perform_vision {
+        display: none; 
+        }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .logo_perform_vision {
+    height: 30px; 
+    }
+    ul.container{display: flex;}
+
+    nav {
+    padding: 12px 10px; ; 
+    }
+    
+    ul li a {
+    font-size:10px; ; 
+    padding: 9px 18px; 
+    }
+    
+    .nav-item {
+    margin-right: 10px; 
+    }
+    
+    .btn {
+    font-size: 1rem; 
+    padding: 9px 18px; 
+    }
+      
+}
+
+
+
+/* Additional responsive styles can be added here */
+@media only screen and (max-width: 1500px) {
+    .logo_perform_vision {
+    height: 30px; 
+    }
+    ul.container{display: flex;}
+
+    nav {
+    padding: 12px 10px; ; 
+    }
+    
+    ul li a {
+    font-size:15px; ; 
+    padding: 9px 18px; 
+    }
+    
+    .nav-item {
+    margin-right: 20px; 
+    }
+    
+    .btn {
+    font-size: 0.8rem; 
+    padding: 9px 18px; 
+    }
+      
+}
+/* Additional responsive styles can be added here */
+/* Additional responsive styles can be added here */
+@media only screen and (max-width: 800px) {
+    .logo_perform_vision {
+    height: 30px; 
+    }
+    ul.container{display: flex;}
+
+ 
+    
+    ul li a {
+    font-size:12px; ; 
+    padding: 9px 18px; 
+    }
+    
+    .nav-item {
+    margin-right: 12px; 
+    }
+    
+    .btn {
+    font-size: 0.6rem; 
+    padding: 9px 18px; 
+    }
+      
+}
+@media only screen and (max-width: 1124px) {
+    .logo_perform_vision {
+    height: 50px; 
+    }
+    ul.container{display: flex;}
+
+ 
+    
+    ul li a {
+    font-size:12px; ; 
+    padding: 9px 18px; 
+    }
+    
+    .nav-item {
+    margin-right: 12px; 
+    }
+    
+    .btn {
+    font-size: 0.6rem; 
+    padding: 9px 18px; 
+    }
+      
+}
+@media only screen and (max-width: 1130px) {
+    .logo_perform_vision {
+    height: 20px; 
+    }
+    ul.container{display: flex;}
+
+ 
+    
+    ul li a {
+    font-size:10px; ; 
+    padding: 9px 15px; 
+    }
+    
+    .nav-item {
+    margin-right: 11px; 
+    }
+    
+    .btn {
+    font-size: 0.5rem; 
+    padding: 9px 18px; 
+    }
+      
+}
+/* Additional responsive styles can be added here */
